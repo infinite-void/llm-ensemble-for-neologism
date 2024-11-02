@@ -1,3 +1,3 @@
-# vision-transformers-with-early-exits
+# llm-ensemble-for-neologism
 
-This repo experiments the early exit network proposed in https://arxiv.org/abs/2301.07099 on multiple vision transformers
+This repo experiments putting together several LLMs into an ensemble to perform sentiment analysis on test with newly coinsed terms
