@@ -8,7 +8,7 @@ Neologisms, or newly coined words and expressions, present unique challenges in 
 1. **DistilBERT**
 2. **GPT-2**
 3. **RoBERTa**
-4. 
+4. **BERTweet**
 5. 
 
 ## Ensemble Approach
