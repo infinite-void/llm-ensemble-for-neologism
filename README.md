@@ -47,3 +47,19 @@ finetune the model to perform well on Neologisms.
 
 ## Ensemble Approach
 Each model is trained individually on the neologism dataset and contributes to the final prediction in the deployed application. The ensemble aggregates outputs from all models to improve accuracy and robustness.
+We perform three ensemble techniques.
+
+### Majority Voting: Simplest Ensemble Model
+The simplest ensemble model employs **majority voting**, where the final label is selected based on the label predicted by the majority of models in the ensemble. **Accuracy Achieved:** 80%
+
+#### Key Insight
+- **Limitation:** The accuracy can decrease when the individual model predictions diverge significantly. 
+- **Reason:** Higher divergence reduces the likelihood of the ensemble aligning with the true label.
+
+#### Example Scenario
+- **Prediction by Models:**
+  - 3 models predict **positive**.
+  - 3 models predict **negative**.
+- **Ensemble Decision:** Chooses either **positive** or **negative** randomly.
+- **Ideal Answer:** **Neutral** (missed due to lack of consensus).
+
