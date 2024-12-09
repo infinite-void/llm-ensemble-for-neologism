@@ -50,7 +50,7 @@ Each model is trained individually on the neologism dataset and contributes to t
 We perform three ensemble techniques.
 
 ### Majority Voting: Simplest Ensemble Model
-The simplest ensemble model employs **majority voting**, where the final label is selected based on the label predicted by the majority of models in the ensemble. **Accuracy Achieved:** 80%
+The simplest ensemble model employs **majority voting**, where the final label is selected based on the label predicted by the majority of models in the ensemble. **Accuracy Achieved:** 80%. Code is available in ensemble_learner_voting.ipynb
 
 #### Key Insight
 - **Limitation:** The accuracy can decrease when the individual model predictions diverge significantly. 
