@@ -36,7 +36,7 @@ The related code for the finetuning apporoaches can be found in DistilBERT_Fine_
 
 ## Finetuning the GPT-2 model
 While finetuning the GPT-2 model, the model is first fine-tuning for the task-specific objective of sentiment analysis. Once the model performs well on sentitment analysis, we then
-finetune the model to perform well on Neologisms. 
+finetune the model to perform well on Neologisms. The raw GPT-2 model was able to achieve only 48% accuracy with sentiment analysis on neologisms. With task specific full finetuning for sentiment analysis an accuracy of upto 75% was possible. Then we finetuned the model further to perform better on neologisms. Through this we were able to achieve an overall accuracy of 83% on Neologisms with full-finetuning.
 
 1. finetuning_gpt2_sentiment.ipynb - Finetuning the base gpt2 model to perform well on the sentiment analysis task
 2. finetune_gpt2_neologism.ipynb - Finetuning gpt2 for sentiment analysis to perform well on sentences with neologisms
@@ -104,3 +104,19 @@ Multiple models make predictions independently, a model’s prediction is assign
 The weighted average combines these predictions to confidently select positive, reducing the risk of relying on a single model’s error.\
 **Ideal Answer:** 
 A robust prediction of positive, leveraging the strengths of multiple models to improve reliability.
+
+---
+### Stacking Ensemble
+We build a meta model with multlayer perceptron to build a stacking ensemble. This achieved the highest possible accuracy of 87%. The code can be found in the ensemble_learner.ipynb. This model was able to capture the non-linear relations between the strengths and weaknesses of the underlying LLM models. This was even able to crack sentences with slang terms. 
+---
+
+### Link to open-source packages and models used
+- DistillBERT - https://huggingface.co/docs/transformers/en/model_doc/distilbert
+- GPT-2 - https://huggingface.co/openai-community/gpt2
+- BERTweet - https://huggingface.co/vinai/bertweet-base
+- FinBERT - https://huggingface.co/ProsusAI/finbert
+- RoBERTA - https://huggingface.co/docs/transformers/en/model_doc/roberta
+- VADER - https://github.com/cjhutto/vaderSentiment
+- LoRA - https://huggingface.co/docs/peft/main/en/conceptual_guides/lora
+- AdaLoRA - https://huggingface.co/docs/peft/main/en/package_reference/adalora
+- DoRA - https://github.com/NVlabs/DoRA
