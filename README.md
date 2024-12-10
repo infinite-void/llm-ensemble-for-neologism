@@ -47,6 +47,17 @@ finetune the model to perform well on Neologisms. The raw GPT-2 model was able t
 
 
 ---
+## Finetuning RoBERTa Model
+
+### 1. **Full finetune and LORA finetune RoBERTa base for Downstream task of analyzing neologisms**
+The code to train and test for the roberta base model is present in - RoBERTa_roberta_base.ipynb. This includes full finetuning and LORA finetuning the RoBERTa base model. The 
+
+### 2. **Full finetune and LORA finetune an already finetuned RoBERTa for Transfer learning and Downstream task of analyzing neologisms**
+The code to train and test for the finetuned RoBERTa model is present in - RoBERTa_roberta_cardifnlp.ipynb. This includes full finetuning and LORA finetuning the RoBERTa model already trained on twitter dataset - tweet_eval. This gives the best accuracy out of all the models used (91.2%)
+
+### 3. **Fine-tuning RoBERTa by unfreezing only selective layers for downstream task of analyzing neologisms**
+The file RoBERTa_roberta_freeze.ipynb contains the steps to fine-tune a RoBERTa model by freezing all layers and training only the classification layer. This is the fastest to train but has sub-par performance compared to full-finetune
+
 
 ## Finetuning the BERTweet Model
 
