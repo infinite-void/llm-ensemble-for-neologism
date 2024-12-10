@@ -45,6 +45,26 @@ finetune the model to perform well on Neologisms.
 5. ada_lora_gpt2_sentiment.ipynb - Finetuning the base gpt2 model to perform well on the sentiment analysis task using the Adaptive Budget Low Rank Adaptation (AdaLoRA) finetuning
 6. ada_lora_gpt2_neologism.ipynb - Finetuning gpt2 for sentiment analysis (using AdaLoRA method) to perform well on sentences with neologisms using AdaLoRA finetuning
 
+
+---
+
+## Finetuning the BERTweet Model
+
+### 1. **Full Finetune against Neologisms Dataset:** 
+The model performs relatively poorly, correctly identifying sentiments less than half the time (43% accuracy). While it is slightly better at being precise (54%), it fails to identify many of the correct sentiments (43% recall). This suggests that the basic fine-tuning is not sufficient to handle the complexity of neologisms in sentiment analysis.​
+
+### 2. **LoRA Fine-tuning against tweet_eval and Neologisms Dataset:** 
+Adding LoRA improves the model’s ability to identify sentiments correctly (51% accuracy) with reduced training time and hardware usage. Essentially, the model is better at capturing more true cases but also makes more errors, indicating that it trades off precision for recall.​
+
+### 3. **DoRA Fine-tuning against neologisms only:** 
+This model demonstrates significant improvement, achieving high accuracy (79%) while maintaining a good balance between precision (72%) and recall (79%) implying that the model is both accurate and consistent in detecting sentiments from neologisms.​
+
+### 4. **DORA Fine-tuning against Twitter_eval & Neologisms:** 
+This yielded the most accurate results (89% accuracy). The model is first finetuned against twitter_eval dataset for sentimental analysis improvement. Then, further finetuned aginst neologisms specific dataset using DoRA improved the results, but with a tradeoff in training time.​
+
+---
+
+
 ## Ensemble Approach
 Each model is trained individually on the neologism dataset and contributes to the final prediction in the deployed application. The ensemble aggregates outputs from all models to improve accuracy and robustness.
 We perform three ensemble techniques.
