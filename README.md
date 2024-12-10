@@ -107,7 +107,9 @@ A robust prediction of positive, leveraging the strengths of multiple models to 
 
 ---
 ### Stacking Ensemble
+
 We build a meta model with multlayer perceptron to build a stacking ensemble. This achieved the highest possible accuracy of 87%. The code can be found in the ensemble_learner.ipynb. This model was able to capture the non-linear relations between the strengths and weaknesses of the underlying LLM models. This was even able to crack sentences with slang terms. 
+
 ---
 
 ### Link to open-source packages and models used
