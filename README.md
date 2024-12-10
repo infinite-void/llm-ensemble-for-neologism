@@ -73,6 +73,19 @@ This model demonstrates significant improvement, achieving high accuracy (79%) w
 ### 4. **DORA Fine-tuning against Twitter_eval & Neologisms:** 
 This yielded the most accurate results (89% accuracy). The model is first finetuned against twitter_eval dataset for sentimental analysis improvement. Then, further finetuned aginst neologisms specific dataset using DoRA improved the results, but with a tradeoff in training time.​
 
+## Finetuning the FinanceBERT Model
+
+### 1. **Challenges with Base FinancialBERT​:** 
+
+The ahmedrachid/FinancialBERT-Sentiment-Analysis model is a fine-tuned BERT model designed for sentiment analysis of financial text. It specializes in understanding and classifying sentiment in news, reports, and other financial documents. However, this model was not able to do well with twitter data or neologisms as it is fine tuned using large text​
+
+### 2. **Fine-Tuning Approaches and Results:** 
+We tried different fine tuning methods like Full Fine tuning, LORA and DORA on the FinancialBERT Sentiment Analysis Model. Subsequent analysis is done on the LORA Finetuning method as that was achieving the best accuracy for this model. Training Time: 938.6101 Seconds​
+The fine-tuned model shows better performance in predicting Class 2 and 3 compared to the original model, however still overestimates class 1 (Neutral). ​
+
+The fine-tuned model achieves significantly higher accuracy across all text lengths, particularly for longer texts, indicating improved handling of complex or detailed inputs. ​
+
+The fine-tuned model reduces the gap between correct and incorrect predictions for several frequent words, suggesting improved contextual understanding of common terms. ​
 ---
 
 
