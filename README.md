@@ -99,7 +99,7 @@ Multiple models make predictions independently, a model’s prediction is assign
 **Prediction by Models:**
     - Model A predicts positive with 70% probability.
     - Model B predicts positive with 60% probability.
-    - Model C predicts positive with 80% probability.
+    - Model C predicts positive with 80% probability.\
 **Ensemble Decision:** 
 The weighted average combines these predictions to confidently select positive, reducing the risk of relying on a single model’s error.\
 **Ideal Answer:** 
