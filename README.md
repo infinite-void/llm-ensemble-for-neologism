@@ -122,3 +122,12 @@ We build a meta model with multlayer perceptron to build a stacking ensemble. Th
 - LoRA - https://huggingface.co/docs/peft/main/en/conceptual_guides/lora
 - AdaLoRA - https://huggingface.co/docs/peft/main/en/package_reference/adalora
 - DoRA - https://github.com/NVlabs/DoRA
+
+--- 
+
+### Finetuned Model Links
+- RoBERTA - https://huggingface.co/AkhilaGP/roberta-senti-neologism-freeze-1 https://huggingface.co/AkhilaGP/roberta-senti-neologism-full-finetune https://huggingface.co/AkhilaGP/roberta-base-neologism-full-finetune https://huggingface.co/AkhilaGP/roberta-senti-neologism-LORA https://huggingface.co/AkhilaGP/roberta-base-neologism-LORA
+- GPT-2 - https://huggingface.co/srinathsk18/ada-lora-finetuned-gpt-2-sentiment-analysis-neologism https://huggingface.co/srinathsk18/finetuned-gpt-2-sentiment-analysis-neologism https://huggingface.co/srinathsk18/lora-finetuned-gpt-2-sentiment-analysis-neologism
+- BERTweet - https://huggingface.co/Himaparasa/bertweet-sentiment-model
+- DistillBERT - https://huggingface.co/PriyadarshiniTamilselvan/finetuning-sentiment-model-neologisms-distilbert-lora https://huggingface.co/PriyadarshiniTamilselvan/finetuning-sentiment-model-neologisms-distilbert-dora https://huggingface.co/PriyadarshiniTamilselvan/finetuning-sentiment-model-neologisms-distilbert
+- 
