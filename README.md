@@ -155,4 +155,3 @@ We build a meta model with multlayer perceptron to build a stacking ensemble. Th
 - GPT-2 - https://huggingface.co/srinathsk18/ada-lora-finetuned-gpt-2-sentiment-analysis-neologism https://huggingface.co/srinathsk18/finetuned-gpt-2-sentiment-analysis-neologism https://huggingface.co/srinathsk18/lora-finetuned-gpt-2-sentiment-analysis-neologism
 - BERTweet - https://huggingface.co/Himaparasa/bertweet-sentiment-model (most-accurate: Finetuned with DoRA against twitter_eval, neologisms dataset)
 - DistillBERT - https://huggingface.co/PriyadarshiniTamilselvan/finetuning-sentiment-model-neologisms-distilbert-lora https://huggingface.co/PriyadarshiniTamilselvan/finetuning-sentiment-model-neologisms-distilbert-dora https://huggingface.co/PriyadarshiniTamilselvan/finetuning-sentiment-model-neologisms-distilbert
-- 
