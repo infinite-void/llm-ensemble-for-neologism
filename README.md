@@ -89,16 +89,18 @@ The simplest ensemble model employs **majority voting**, where the final label i
 Multiple models make predictions independently, a model’s prediction is assigned a **weight**, typically based on the model’s **performance** and **reliability**. The output of all models are converted to a scale of 0-1 and the end result is returned.
 #### Key Insights
 - **Strength:** Improves Robustness
-- **Explanation:** Weighted averaging reduces the impact of individual model errors by combining predictions, leading to a more balanced and reliable outcome.
+  **Explanation:** Weighted averaging reduces the impact of individual model errors by combining predictions, leading to a more balanced and reliable outcome.
 
 - **Limitation:** Does Not Consider Individual Model Confidence
-- **Explanation:** Weighted averaging applies fixed weights to model predictions regardless of how confident each model is about a specific input, potentially leading to less reliable decisions.
+  **Explanation:** Weighted averaging applies fixed weights to model predictions regardless of how confident each model is about a specific input, potentially leading to less reliable decisions.
 
 
 #### Example Scenario
-- **Prediction by Models:**
+**Prediction by Models:**
     - Model A predicts positive with 70% probability.
     - Model B predicts positive with 60% probability.
     - Model C predicts positive with 80% probability.
-**Ensemble Decision:** The weighted average combines these predictions to confidently select positive, reducing the risk of relying on a single model’s error.
-**Ideal Answer:** A robust prediction of positive, leveraging the strengths of multiple models to improve reliability.
+**Ensemble Decision:** 
+The weighted average combines these predictions to confidently select positive, reducing the risk of relying on a single model’s error.
+**Ideal Answer:** 
+A robust prediction of positive, leveraging the strengths of multiple models to improve reliability.
